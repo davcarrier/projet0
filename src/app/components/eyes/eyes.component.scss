@@ -1,0 +1,31 @@
+.homer {
+  height: 800px;
+}
+
+.eyes {
+  position: relative;
+}
+
+.eye {
+  width: 100px;
+  // z-index: 1;
+  position: relative;
+
+  &__left {
+    top: -124px;
+    left: -559px;
+  }
+
+  &__right {
+    top: -106px;
+    left: -507px;
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,73 @@
+<!-- <div #test *ngFor="let div of myDivs">
+  <div id="{{ div.id }}" class="panel {{ div.className }}">
+    <b>{{div.title}} PANEL</b>
+  </div>
+</div> -->
+
+<div class="cv-container">
+  <h1 class="cv-container_h1">
+    {{ 'cv.title' | translate}}
+  </h1>
+  <div #test>
+    <div class="cv-container_panel">
+      <div class="cv-container_info">
+        <div>
+          <h2 class="cv-container_h2">{{ 'cv.garneau.date' | translate }}</h2>
+          <h3 class="cv-container_h3">{{ 'cv.garneau.title' | translate }}</h3>
+        </div>
+        <div>
+          <p class="cv-container_description">
+            {{ 'cv.garneau.description' | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="cv-container_img-container cv-container_img-container--bg-garneau">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div #test>
+    <div class="cv-container_panel">
+      <div class="cv-container_info">
+        <div>
+          <h2 class="cv-container_h2">{{ 'cv.garneau.date' | translate }}</h2>
+          <h3 class="cv-container_h3">{{ 'cv.garneau.title' | translate }}</h3>
+        </div>
+        <div>
+          <p class="cv-container_description">
+            {{ 'cv.garneau.description' | translate }}
+          </p>
+        </div>
+      </div>
+      <div class="cv-container_img-container cv-container_img-container--bg-garneau">
+
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+  <div #test>
+    <div class="cv-container_panel {{ myDivs[1].className }}">
+      <b>Olympus (Front-End)</b>
+    </div>
+  </div>
+
+  <div #test>
+    <div class="cv-container_panel {{ myDivs[2].className }}">
+      <b>Olympus (Full-Stack)</b>
+    </div>
+  </div>
+
+  <div #test>
+    <div class="cv-container_panel {{ myDivs[3].className }}">
+      <b>Accéo Solutions</b>
+    </div>
+  </div>
+
+</div>

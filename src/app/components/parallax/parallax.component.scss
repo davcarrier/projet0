@@ -1,0 +1,91 @@
+// Ex 1
+.first {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: red;
+}
+
+.second {
+  height: 1300px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: green;
+}
+
+.cv-container {
+
+  &_panel {
+    height: 100vh;
+    // height: 800px;
+    display: flex;
+    justify-content: space-around;
+    // padding-top: 100px;
+    align-items: center;
+    width: 100%;
+  }
+
+  &_img-container {
+    margin: 20px;
+    width: 60%;
+    height: 70%;
+
+    &--bg-garneau {
+      background-image: url("../../../assets/images/garneau.webp");
+      background-size: cover;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+    height: 30%;
+  }
+
+  &_h1 {
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    padding: 50px;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  &_h2 {
+    font-size: 40px;
+  }
+
+  &_h3 {
+    font-size: 30px;
+  }
+
+  &_description {
+    width: 75%;
+    font-size: 20px;
+  }
+}
+
+
+
+
+.red {
+  background-color: red;
+}
+.turquoise {
+  background-color: turquoise;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+
+//Ex 3

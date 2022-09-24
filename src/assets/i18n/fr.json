@@ -1,0 +1,10 @@
+{
+  "cv" : {
+    "title" : "Mon parcours",
+    "garneau" : {
+      "date" : "Mai 2021",
+      "title" : "Graduation",
+      "description" : "Après 3 années d'études au cégep Garneau en technique de l'informatique, j'ai finalement obtenu mon diplome à la session d'hiver 2021."
+    }
+  }
+}
