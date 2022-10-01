@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import ParallaxComponent from './components/parallax/parallax.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EyesComponent } from './components/eyes/eyes.component';
+import { BoomComponent } from './components/boom/boom.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -18,7 +19,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     ParallaxComponent,
-    EyesComponent
+    EyesComponent,
+    BoomComponent
   ],
   imports: [
     BrowserModule,

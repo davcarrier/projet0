@@ -1,0 +1,90 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  animation: break 6s ease-in-out forwards;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+#boom {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  animation: crash 6s linear;
+}
+
+@keyframes break {
+  50% {
+    rotate: 0deg;
+    background-color: white;
+    color: black;
+  }
+
+  52% {
+    filter : hue-rotate(10deg);
+    rotate: 1deg;
+    background-color: red;
+    // color: yellow;
+  }
+
+  54% {
+    filter : hue-rotate(-10deg);
+    rotate: -1deg
+  }
+
+  56% {
+    filter : hue-rotate(-20deg);
+    rotate: 2deg
+  }
+
+  58% {
+    filter : hue-rotate(-20deg);
+    rotate: -2deg
+  }
+
+  60% {
+    filter : hue-rotate(30deg);
+    rotate: 3deg;
+    // color: yellow;
+  }
+
+  100% {
+    filter : hue-rotate(30deg);
+    rotate: 3deg;
+    background-color: red;
+    // color: yellow;
+  }
+}
+
+@keyframes crash {
+  0% {
+    translate: -100vw;
+    background-image: url("../../../assets/images/alien-ship.gif");
+  }
+
+  49% {
+    background-image: url("../../../assets/images/alien-ship.gif");
+  }
+
+  50% {
+    translate: 0;
+    background-image: url("../../../assets/images/explosion.gif");
+  }
+
+  80% {
+    background-image: none;
+  }
+}
